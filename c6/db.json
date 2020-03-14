@@ -1,0 +1,62 @@
+{
+  "notebooks": [
+    {
+      "id": 1,
+      "name": "默认笔记本"
+    },
+    {
+      "id": 2,
+      "name": "我的2019"
+    },
+    {
+      "id": 3,
+      "name": "读书笔记"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "title": "《深入理解ES6》",
+      "body": "## 作者简介\n\nNicholas C. Zakas自2000年以来一直致力于Web应用程序的开发，重点关注前端开发，并以写作和讲述前沿最佳实践而闻名。他曾于雅虎主页任职5年有余，他也是多本书的作者，其中包括The Principles of Object-Oriented JavaScript（No Starch Press出版社）和Professional JavaScript for Web Developers（Wrox出版社）。\n\n## 目录\n\n- 第1章 块级作用域绑定\n- 第2章 字符串和正则表达式",
+      "datetime": "2019-03-11T05:34:51.000Z",
+      "bookId": 3
+    },
+    {
+      "id": 4,
+      "title": "新建笔记",
+      "body": "",
+      "datetime": "2019-03-11T08:43:34.000Z",
+      "bookId": 1
+      
+    },
+    {
+      "id": 9,
+      "title": "实战Evernote",
+      "body": "##  开发步骤\n\n-  搭建应用\n-  创建静态页面结构\n-  mock数据接口\n-  开发 **笔记本列表**               \n-  开发 **笔记列表**\n-  开发 **编辑功能**\n-  开发 **新建** 和 **删除**\n\n## 知识点\n\n### Javascript\n\n- fetch / ajax\n- Array\n\n### HTTP\n\n- Restful API\n\n## 基础库和工具\n\n- [json-server](https://github.com/typicode/json-server)\n- [normalize.css](https://necolas.github.io/normalize.css/)\n- [sweetalert](https://sweetalert2.github.io/)",
+      "datetime": "2019-03-11T08:43:34.000Z",
+      "bookId": 1
+      
+    },
+    {
+      "id": 10,
+      "title": "《CSS揭秘》",
+      "body": "## 简介\n\n这是一本注重实践的教程。CSS专家Lea Verou单刀直入，教你用代码解决实际问题。她在书中揭示了47个鲜为人知的CSS技巧，指导中高级CSS开发者循序渐进，探寻更优雅的解决方案，攻克每天都会遇到的各种网页样式难题。\n\n读者将在本书中领略作者的缜密思路，并学会用这种思路来应对各种不期而遇的CSS难题，达成DRY、可维护、可扩展、轻量级并且符合标准的结果。\n\n## 主题\n\n- 背景与边框\n- 形状\n- 视觉效果\n- 字体排印\n- 用户体验\n- 结构与布局\n- 过渡与动画",
+      "datetime": "2019-03-13T10:15:10.000Z",
+      "bookId": 3
+    },
+    {
+      "id": 11,
+      "title": "React Hooks",
+      "body": "```\nimport React, { useState } from 'react';\n\nfunction Example() {\n  // Declare a new state variable, which we'll call \"count\"\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>\n        Click me\n      </button>\n    </div>\n  );\n}\n```",
+      "datetime": "2019-03-13T10:17:06.000Z",
+      "bookId": 1
+    },
+    {
+      "id": 12,
+      "title": "新建笔记",
+      "body": "",
+      "datetime": "2019-03-15T06:36:35.396Z",
+      "bookId": 1
+    }
+  ]
+}

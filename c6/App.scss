@@ -1,0 +1,259 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  color: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.trash.button {
+  padding: 4px;
+  background: transparent;
+}
+
+.has-icon {
+  .iconfont {
+    margin-right: (4em/16)
+  }
+}
+
+
+.app {
+  display: flex;
+  height: 100vh;
+
+  >div {
+    // border: 1px solid red;
+  }
+
+  >.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: #343434;
+    color: #fff;
+    >.header {
+      padding: 5px 0;
+    }
+    >.body {
+      flex: 1;
+    }
+    .adder {
+      font-weight: 500;
+      i {
+        width: 1em;
+        height: 1em;
+        padding: 4px;
+        margin-right: 10px;
+        line-height: 1em;
+        border-radius: 50%;
+        background: #58c05c;
+        font-size: 20px;
+      }
+      color: #fff;
+      background: transparent;
+    }
+
+    .notebooks {
+      margin: 20px 0;
+      >.header {
+        margin: 0 20px 10px;
+        font-weight: 500;
+      }
+    }
+    .notebook-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px 0 30px;
+
+      >.title {
+        line-height: 2;
+        cursor: pointer;
+      }
+
+      .trash.button {
+        display: none;
+      }
+      &:hover {
+        background: rgba(0, 0, 0, 0.3);
+        .trash.button {
+          display: flex;
+        }
+      }
+      &.active {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  >.notes-panel {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background: #ececec;
+    >.header {
+      padding: 10px 18px;
+      font-size: 20px;
+      border-bottom: 1px solid #d5d5d5;
+    }
+    >.body {
+      flex: 1;
+      overflow-y: auto;
+      padding-top: 18px;
+    }
+
+    .notes-list {
+      li {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+      }
+    }
+
+    .note-brief {
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+      font-size: 14px;
+
+      >.box {
+        border: 1px solid #e6e6e6;
+        background: #fff;
+      }
+
+      &.active {
+        >.box {
+          border: 2px solid #2196f3;
+        }
+      }
+
+      .header {
+        padding: 8px 16px 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .body {
+        flex: 1;
+        overflow: hidden;
+        margin: 16px;
+        height: 1.5*7em;
+        line-height: 1.5;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 22px;
+      }
+      .datetime {
+        font-size: 12px;
+        color: #327bf7;
+      }
+      .trash.button {
+        display: none;
+      }
+      &:hover {
+        .trash.button {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  >.note-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    >.header {
+      .category {
+        display: flex;
+        align-items: center;
+        padding: 8px 10px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 13px;
+      }
+      .title {
+        font-size: 18px;
+        border-bottom: 1px solid #e5e5e5;
+        input {
+          display: block;
+          box-sizing: border-box;
+          width: 100%;
+          border: none;
+          padding: 8px 16px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    >.body {
+      flex: 1;
+      display: flex;
+      >.editor {
+        width: 50%;
+        textarea {
+          box-sizing: border-box;
+          padding: 20px;
+          width: 100%;
+          height: 100%;
+          border: none;
+          background: #21272c;
+          color: #fff;
+          line-height: 1.5;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      >.preview {
+        flex: 1;
+        padding: 10px 20px;
+        p {
+          margin: 0.5em 0;
+        }
+        ul {
+          li {
+            display: list-item;
+            list-style-type: disc;
+          }
+        }
+      }
+    }
+  }
+}

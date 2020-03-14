@@ -143,8 +143,8 @@
 
 #### HTML/CSS
 
-- [HTML结构](https://github.com/qingguatang/practise-react-resource/blob/master/c5/Markdown/index.js)
-- [CSS](https://github.com/qingguatang/practise-react-resource/blob/master/c5/Markdown/style.scss)
+- [HTML结构](c5/Markdown/index.js)
+- [CSS](c5/Markdown/style.scss)
 - [iconfont图标css文件](https://at.alicdn.com/t/font_1039058_vrejcbdlqk.css)  
   https//at.alicdn.com/t/font_1039058_vrejcbdlqk.css
 
@@ -166,15 +166,14 @@
 
 ### 6.1 示例演示
 
-- [示例演示](https://qingguatang.github.io/fe-react-evernote/)
 - [json-server](https://github.com/typicode/json-server)
 - [sweetalert](https://sweetalert2.github.io/)
 
 ### 6.2 开发流程
 
 - HTML结构和样式
-  - [App.js](https://github.com/qingguatang/practise-react-resource/blob/master/c6/App.js)
-  - [style.scss](https://github.com/qingguatang/practise-react-resource/blob/master/c6/App.scss)
+  - [App.js](c6/App.js)
+  - [style.scss](c6/App.scss)
   - iconfont.css
     `//at.alicdn.com/t/font_1016384_v9jx0n96nb.css`
 - [normalize.css](https://necolas.github.io/normalize.css/)
@@ -185,7 +184,7 @@
 ### 6.3 Mock数据接口
 
 - [json-server](https://github.com/typicode/json-server#getting-started)
-- [用到的数据](https://github.com/qingguatang/practise-react-resource/blob/master/c6/db.json)
+- [用到的数据](c6/db.json)
 
 ### 6.4 使用ajax
 
